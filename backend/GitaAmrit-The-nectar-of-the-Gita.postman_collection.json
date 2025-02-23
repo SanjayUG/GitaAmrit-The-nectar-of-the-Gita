@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "676b2eb3-6150-4e65-aff9-46e9deb1e773",
+		"name": "GitaAmrit-The-nectar-of-the-Gita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34796044"
+	},
+	"item": [
+		{
+			"name": "Get All Verses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Verses by Chapter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/bg/2.6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"bg",
+						"2.6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Specific Verse",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "post a question",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
