@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #f5d486;
+  overflow-x: hidden;
+}
+
+/* Responsive Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Background Glow Animation */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.2), transparent);
+  animation: glowEffect 6s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes glowEffect {
+  0% { transform: scale(1); opacity: 0.3; }
+  100% { transform: scale(1.2); opacity: 0.6; }
+}
+
+/* Loading Animation */
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-align: center;
+  animation: fadeInOut 2s infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Hide content until loaded */
+.hidden { display: none; }
+
+/* Home Page */
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffcc99;
+  border-radius: 5px;
+  background-color: #222;
+  color: #f5d486;
+  width: 300px;
+  max-width: 90%;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #ffcc00;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #d4a200;
+}
+
+/* Shloka List */
+.shloka-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Shloka Card */
+.shloka-card {
+  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+  border: 2px solid #ffcc00;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 200, 0, 0.4);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.shloka-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 200, 0, 0.6);
+}
+
+.shloka-card h3 {
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shloka-card p {
+  color: #f5d486;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+/* Ask Question Page */
+.ask-question {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Search Container */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 90%;
+  border: 1px solid #ffcc99;
+  border-radius: 5px;
+  background-color: #222;
+  color: #f5d486;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #ffcc00;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #d4a200;
+}
+
+/* Buttons */
+.back-button, .ask-question-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover, .ask-question-button:hover {
+  background-color: #d4a200;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .shloka-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .search-bar,
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input,
+  .search-container input {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .search-bar button,
+  .search-container button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .loading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shloka-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .search-bar input,
+  .search-container input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-bar button,
+  .search-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .loading {
+    font-size: 18px;
+  }
+}
+
+/* Ask a Question Button - Fixed Top Right */
+.ask-question-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(255, 200, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.ask-question-button:hover {
+  background-color: #d4a200;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(255, 200, 0, 0.6);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .ask-question-button {
+    top: 10px;
+    right: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ask-question-button {
+    top: 8px;
+    right: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}

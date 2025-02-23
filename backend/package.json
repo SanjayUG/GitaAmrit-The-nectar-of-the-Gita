@@ -1,0 +1,23 @@
+{
+  "name": "gitaamrith_backend",
+  "version": "1.0.0",
+  "description": "The Bhagavad Gita (often spelled as Bhagavat Gita) is a sacred Hindu scripture that is part of the Mahabharata, one of the two great Indian epics. It is a 700-verse dialogue between Lord Krishna and Arjuna on the battlefield of Kurukshetra.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SanjayUG",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "natural": "^8.0.1",
+    "nodemon": "^3.1.9"
+  }
+}
