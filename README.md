@@ -18,8 +18,10 @@ The **Bhagavad Gita Slokas** project is a web application that allows users to e
 - **API Testing:** Postman
 - **Data Source:** Kaggle dataset (Bhagavad Gita Slokas)
 - **Version Control:** Git & GitHub
+- **Deployment:** Frontend - Vercel, Backend - Render
 
-## 📌 Installation & Setup
+## 🌐 Live Demo
+👉 **Visit the live application:** [GitaAmrit: The-nectar-of-the-Gita](https://gita-amrit-the-nectar-of-the-gita.vercel.app/)
 
 ### Prerequisites
 Ensure you have the following installed on your system:
