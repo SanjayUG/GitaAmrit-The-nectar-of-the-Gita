@@ -5,7 +5,7 @@ The **Bhagavad Gita Slokas** project is a web application that allows users to e
 
 ## 🚀 Features
 - 📜 View and search for Bhagavad Gita slokas
-- 🔍 Interactive search functionality for quick access
+- 🔍 Interactive search functionality for quick access(using NPL)
 - 🎨 Responsive UI for an optimal experience on all devices
 - ⚡ Fast and efficient API using Node.js & Express
 - 🗄️ MongoDB database for storing and retrieving slokas
